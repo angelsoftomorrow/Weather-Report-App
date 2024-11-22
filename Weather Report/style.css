@@ -1,0 +1,120 @@
+@font-face{
+    font-family: 'HelveticaNeue Light';
+    src: url('fonts/HelveticaNeue Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+
+}
+
+body{
+    background-image: url('./images/double-rainbows.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'HelveticaNeue Light', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#forecast-panel{
+    background: rgb(216, 212, 212);
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h2, label, p {
+    color: #000;
+    margin: 8px 0;
+}
+
+input{
+    width: 65%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px grey;
+    margin-top: 20px;
+    font-family: 'HelveticaNeue Light', sans-serif;
+}
+
+button{ 
+    background: rgb(95, 95, 255);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+button img {
+    width: 13x;
+    height: 13px;
+    object-fit: contain;
+}
+
+button:hover{
+    background: black;
+}
+
+#weather-info {
+    font-size: 20px;
+}
+
+#weather-icon{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px;
+    margin-bottom: -20px;
+    display: none;
+    gap: 20px;
+    padding: 10px;
+}
+
+#daily-forecast {
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.daily-item{
+    flex: 0 0 auto;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 35px;
+    margin-right: 35px;
+    color: black;
+    font-size: 15px;
+}
+
+.daily-item img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#daily-heading{
+    color: black;
+    margin-top: 10px;
+}
+
+
+#unit-toggle{
+    font-family: 'HelveticaNeue Light', sans-serif;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
